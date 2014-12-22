@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		848FFE9C1A45F0D3003D4030 /* SquareShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FFE9B1A45F0D3003D4030 /* SquareShape.swift */; };
+		848FFE9E1A466967003D4030 /* TShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FFE9D1A466967003D4030 /* TShape.swift */; };
+		848FFEA01A46ABE4003D4030 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FFE9F1A46ABE4003D4030 /* LineShape.swift */; };
+		848FFEA31A46AEF0003D4030 /* LShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FFEA21A46AEF0003D4030 /* LShape.swift */; };
+		848FFEA51A46B245003D4030 /* JShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FFEA41A46B245003D4030 /* JShape.swift */; };
+		848FFEA71A46B267003D4030 /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FFEA61A46B267003D4030 /* SShape.swift */; };
+		848FFEAB1A46B998003D4030 /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FFEAA1A46B998003D4030 /* ZShape.swift */; };
+		848FFEAD1A46BA49003D4030 /* SwiftTris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FFEAC1A46BA49003D4030 /* SwiftTris.swift */; };
+		84A3AC841A4267B3009275E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3AC831A4267B3009275E2 /* AppDelegate.swift */; };
+		84A3AC881A4267B3009275E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3AC871A4267B3009275E2 /* GameScene.swift */; };
+		84A3AC8A1A4267B3009275E2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3AC891A4267B3009275E2 /* GameViewController.swift */; };
+		84A3AC8D1A4267B3009275E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A3AC8B1A4267B3009275E2 /* Main.storyboard */; };
+		84A3AC8F1A4267B3009275E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A3AC8E1A4267B3009275E2 /* Images.xcassets */; };
+		84A3AC921A4267B3009275E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A3AC901A4267B3009275E2 /* LaunchScreen.xib */; };
+		84A3AC9E1A4267B4009275E2 /* Nhat_tetrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3AC9D1A4267B4009275E2 /* Nhat_tetrisTests.swift */; };
+		84A3ACAD1A426D0D009275E2 /* bomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84A3ACA81A426D0D009275E2 /* bomb.mp3 */; };
+		84A3ACAE1A426D0D009275E2 /* drop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84A3ACA91A426D0D009275E2 /* drop.mp3 */; };
+		84A3ACAF1A426D0D009275E2 /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84A3ACAA1A426D0D009275E2 /* gameover.mp3 */; };
+		84A3ACB01A426D0D009275E2 /* levelup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84A3ACAB1A426D0D009275E2 /* levelup.mp3 */; };
+		84A3ACB11A426D0D009275E2 /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84A3ACAC1A426D0D009275E2 /* theme.mp3 */; };
+		84A3ACBA1A426D6A009275E2 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A3ACB31A426D6A009275E2 /* background.png */; };
+		84A3ACBB1A426D6A009275E2 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A3ACB41A426D6A009275E2 /* background@2x.png */; };
+		84A3ACBC1A426D6A009275E2 /* gameboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A3ACB51A426D6A009275E2 /* gameboard.png */; };
+		84A3ACBD1A426D6A009275E2 /* gameboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A3ACB61A426D6A009275E2 /* gameboard@2x.png */; };
+		84A3ACBE1A426D6A009275E2 /* whitebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A3ACB71A426D6A009275E2 /* whitebg.png */; };
+		84A3ACBF1A426D6A009275E2 /* whitebg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A3ACB81A426D6A009275E2 /* whitebg@2x.png */; };
+		84A3ACC01A426D6A009275E2 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A3ACB91A426D6A009275E2 /* Sprites.atlas */; };
+		84A3ACC31A42732F009275E2 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3ACC21A42732F009275E2 /* Array2D.swift */; };
+		84A3ACC51A42826A009275E2 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3ACC41A42826A009275E2 /* Block.swift */; };
+		84A3ACC71A429365009275E2 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3ACC61A429365009275E2 /* Shape.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84A3AC981A4267B4009275E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A3AC761A4267B3009275E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84A3AC7D1A4267B3009275E2;
+			remoteInfo = Nhat_tetris;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		848FFE9B1A45F0D3003D4030 /* SquareShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareShape.swift; sourceTree = "<group>"; };
+		848FFE9D1A466967003D4030 /* TShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TShape.swift; sourceTree = "<group>"; };
+		848FFE9F1A46ABE4003D4030 /* LineShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
+		848FFEA21A46AEF0003D4030 /* LShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LShape.swift; sourceTree = "<group>"; };
+		848FFEA41A46B245003D4030 /* JShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JShape.swift; sourceTree = "<group>"; };
+		848FFEA61A46B267003D4030 /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
+		848FFEAA1A46B998003D4030 /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
+		848FFEAC1A46BA49003D4030 /* SwiftTris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTris.swift; sourceTree = "<group>"; };
+		84A3AC7E1A4267B3009275E2 /* Nhat_tetris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nhat_tetris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A3AC821A4267B3009275E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A3AC831A4267B3009275E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84A3AC871A4267B3009275E2 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		84A3AC891A4267B3009275E2 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		84A3AC8C1A4267B3009275E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84A3AC8E1A4267B3009275E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84A3AC911A4267B3009275E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		84A3AC971A4267B4009275E2 /* Nhat_tetrisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Nhat_tetrisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A3AC9C1A4267B4009275E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A3AC9D1A4267B4009275E2 /* Nhat_tetrisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nhat_tetrisTests.swift; sourceTree = "<group>"; };
+		84A3ACA81A426D0D009275E2 /* bomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bomb.mp3; sourceTree = "<group>"; };
+		84A3ACA91A426D0D009275E2 /* drop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drop.mp3; sourceTree = "<group>"; };
+		84A3ACAA1A426D0D009275E2 /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover.mp3; sourceTree = "<group>"; };
+		84A3ACAB1A426D0D009275E2 /* levelup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = levelup.mp3; sourceTree = "<group>"; };
+		84A3ACAC1A426D0D009275E2 /* theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = theme.mp3; sourceTree = "<group>"; };
+		84A3ACB31A426D6A009275E2 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		84A3ACB41A426D6A009275E2 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		84A3ACB51A426D6A009275E2 /* gameboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameboard.png; sourceTree = "<group>"; };
+		84A3ACB61A426D6A009275E2 /* gameboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gameboard@2x.png"; sourceTree = "<group>"; };
+		84A3ACB71A426D6A009275E2 /* whitebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitebg.png; sourceTree = "<group>"; };
+		84A3ACB81A426D6A009275E2 /* whitebg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whitebg@2x.png"; sourceTree = "<group>"; };
+		84A3ACB91A426D6A009275E2 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		84A3ACC21A42732F009275E2 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		84A3ACC41A42826A009275E2 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		84A3ACC61A429365009275E2 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84A3AC7B1A4267B3009275E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A3AC941A4267B4009275E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		848FFEA11A46AEDF003D4030 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				84A3ACC61A429365009275E2 /* Shape.swift */,
+				848FFE9B1A45F0D3003D4030 /* SquareShape.swift */,
+				848FFE9D1A466967003D4030 /* TShape.swift */,
+				848FFE9F1A46ABE4003D4030 /* LineShape.swift */,
+				848FFEA21A46AEF0003D4030 /* LShape.swift */,
+				848FFEA41A46B245003D4030 /* JShape.swift */,
+				848FFEA61A46B267003D4030 /* SShape.swift */,
+				848FFEAA1A46B998003D4030 /* ZShape.swift */,
+			);
+			name = Shape;
+			sourceTree = "<group>";
+		};
+		84A3AC751A4267B3009275E2 = {
+			isa = PBXGroup;
+			children = (
+				84A3AC801A4267B3009275E2 /* Nhat_tetris */,
+				84A3AC9A1A4267B4009275E2 /* Nhat_tetrisTests */,
+				84A3AC7F1A4267B3009275E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84A3AC7F1A4267B3009275E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A3AC7E1A4267B3009275E2 /* Nhat_tetris.app */,
+				84A3AC971A4267B4009275E2 /* Nhat_tetrisTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A3AC801A4267B3009275E2 /* Nhat_tetris */ = {
+			isa = PBXGroup;
+			children = (
+				848FFEA11A46AEDF003D4030 /* Shape */,
+				84A3AC831A4267B3009275E2 /* AppDelegate.swift */,
+				84A3AC871A4267B3009275E2 /* GameScene.swift */,
+				84A3AC891A4267B3009275E2 /* GameViewController.swift */,
+				84A3AC8B1A4267B3009275E2 /* Main.storyboard */,
+				84A3AC8E1A4267B3009275E2 /* Images.xcassets */,
+				84A3AC901A4267B3009275E2 /* LaunchScreen.xib */,
+				84A3AC811A4267B3009275E2 /* Supporting Files */,
+				84A3ACC21A42732F009275E2 /* Array2D.swift */,
+				84A3ACC41A42826A009275E2 /* Block.swift */,
+				848FFEAC1A46BA49003D4030 /* SwiftTris.swift */,
+			);
+			path = Nhat_tetris;
+			sourceTree = "<group>";
+		};
+		84A3AC811A4267B3009275E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84A3ACB21A426D6A009275E2 /* Images */,
+				84A3ACB91A426D6A009275E2 /* Sprites.atlas */,
+				84A3ACA71A426D0D009275E2 /* Sounds */,
+				84A3AC821A4267B3009275E2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84A3AC9A1A4267B4009275E2 /* Nhat_tetrisTests */ = {
+			isa = PBXGroup;
+			children = (
+				84A3AC9D1A4267B4009275E2 /* Nhat_tetrisTests.swift */,
+				84A3AC9B1A4267B4009275E2 /* Supporting Files */,
+			);
+			path = Nhat_tetrisTests;
+			sourceTree = "<group>";
+		};
+		84A3AC9B1A4267B4009275E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84A3AC9C1A4267B4009275E2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84A3ACA71A426D0D009275E2 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				84A3ACA81A426D0D009275E2 /* bomb.mp3 */,
+				84A3ACA91A426D0D009275E2 /* drop.mp3 */,
+				84A3ACAA1A426D0D009275E2 /* gameover.mp3 */,
+				84A3ACAB1A426D0D009275E2 /* levelup.mp3 */,
+				84A3ACAC1A426D0D009275E2 /* theme.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		84A3ACB21A426D6A009275E2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84A3ACB31A426D6A009275E2 /* background.png */,
+				84A3ACB41A426D6A009275E2 /* background@2x.png */,
+				84A3ACB51A426D6A009275E2 /* gameboard.png */,
+				84A3ACB61A426D6A009275E2 /* gameboard@2x.png */,
+				84A3ACB71A426D6A009275E2 /* whitebg.png */,
+				84A3ACB81A426D6A009275E2 /* whitebg@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84A3AC7D1A4267B3009275E2 /* Nhat_tetris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A3ACA11A4267B4009275E2 /* Build configuration list for PBXNativeTarget "Nhat_tetris" */;
+			buildPhases = (
+				84A3AC7A1A4267B3009275E2 /* Sources */,
+				84A3AC7B1A4267B3009275E2 /* Frameworks */,
+				84A3AC7C1A4267B3009275E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nhat_tetris;
+			productName = Nhat_tetris;
+			productReference = 84A3AC7E1A4267B3009275E2 /* Nhat_tetris.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84A3AC961A4267B4009275E2 /* Nhat_tetrisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A3ACA41A4267B4009275E2 /* Build configuration list for PBXNativeTarget "Nhat_tetrisTests" */;
+			buildPhases = (
+				84A3AC931A4267B4009275E2 /* Sources */,
+				84A3AC941A4267B4009275E2 /* Frameworks */,
+				84A3AC951A4267B4009275E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84A3AC991A4267B4009275E2 /* PBXTargetDependency */,
+			);
+			name = Nhat_tetrisTests;
+			productName = Nhat_tetrisTests;
+			productReference = 84A3AC971A4267B4009275E2 /* Nhat_tetrisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84A3AC761A4267B3009275E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = nhat;
+				TargetAttributes = {
+					84A3AC7D1A4267B3009275E2 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					84A3AC961A4267B4009275E2 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 84A3AC7D1A4267B3009275E2;
+					};
+				};
+			};
+			buildConfigurationList = 84A3AC791A4267B3009275E2 /* Build configuration list for PBXProject "Nhat_tetris" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84A3AC751A4267B3009275E2;
+			productRefGroup = 84A3AC7F1A4267B3009275E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84A3AC7D1A4267B3009275E2 /* Nhat_tetris */,
+				84A3AC961A4267B4009275E2 /* Nhat_tetrisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84A3AC7C1A4267B3009275E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A3AC921A4267B3009275E2 /* LaunchScreen.xib in Resources */,
+				84A3ACAE1A426D0D009275E2 /* drop.mp3 in Resources */,
+				84A3ACBE1A426D6A009275E2 /* whitebg.png in Resources */,
+				84A3ACB11A426D0D009275E2 /* theme.mp3 in Resources */,
+				84A3ACBD1A426D6A009275E2 /* gameboard@2x.png in Resources */,
+				84A3ACAF1A426D0D009275E2 /* gameover.mp3 in Resources */,
+				84A3AC8F1A4267B3009275E2 /* Images.xcassets in Resources */,
+				84A3ACBF1A426D6A009275E2 /* whitebg@2x.png in Resources */,
+				84A3ACB01A426D0D009275E2 /* levelup.mp3 in Resources */,
+				84A3ACC01A426D6A009275E2 /* Sprites.atlas in Resources */,
+				84A3ACAD1A426D0D009275E2 /* bomb.mp3 in Resources */,
+				84A3ACBA1A426D6A009275E2 /* background.png in Resources */,
+				84A3ACBB1A426D6A009275E2 /* background@2x.png in Resources */,
+				84A3ACBC1A426D6A009275E2 /* gameboard.png in Resources */,
+				84A3AC8D1A4267B3009275E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A3AC951A4267B4009275E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84A3AC7A1A4267B3009275E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848FFEA31A46AEF0003D4030 /* LShape.swift in Sources */,
+				848FFE9C1A45F0D3003D4030 /* SquareShape.swift in Sources */,
+				84A3AC881A4267B3009275E2 /* GameScene.swift in Sources */,
+				848FFEA51A46B245003D4030 /* JShape.swift in Sources */,
+				84A3ACC71A429365009275E2 /* Shape.swift in Sources */,
+				848FFEAD1A46BA49003D4030 /* SwiftTris.swift in Sources */,
+				84A3ACC31A42732F009275E2 /* Array2D.swift in Sources */,
+				848FFEA01A46ABE4003D4030 /* LineShape.swift in Sources */,
+				848FFEA71A46B267003D4030 /* SShape.swift in Sources */,
+				848FFE9E1A466967003D4030 /* TShape.swift in Sources */,
+				84A3ACC51A42826A009275E2 /* Block.swift in Sources */,
+				84A3AC8A1A4267B3009275E2 /* GameViewController.swift in Sources */,
+				848FFEAB1A46B998003D4030 /* ZShape.swift in Sources */,
+				84A3AC841A4267B3009275E2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A3AC931A4267B4009275E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A3AC9E1A4267B4009275E2 /* Nhat_tetrisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84A3AC991A4267B4009275E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84A3AC7D1A4267B3009275E2 /* Nhat_tetris */;
+			targetProxy = 84A3AC981A4267B4009275E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84A3AC8B1A4267B3009275E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A3AC8C1A4267B3009275E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84A3AC901A4267B3009275E2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A3AC911A4267B3009275E2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84A3AC9F1A4267B4009275E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84A3ACA01A4267B4009275E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84A3ACA21A4267B4009275E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Nhat_tetris/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84A3ACA31A4267B4009275E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Nhat_tetris/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84A3ACA51A4267B4009275E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Nhat_tetrisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nhat_tetris.app/Nhat_tetris";
+			};
+			name = Debug;
+		};
+		84A3ACA61A4267B4009275E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Nhat_tetrisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nhat_tetris.app/Nhat_tetris";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84A3AC791A4267B3009275E2 /* Build configuration list for PBXProject "Nhat_tetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A3AC9F1A4267B4009275E2 /* Debug */,
+				84A3ACA01A4267B4009275E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A3ACA11A4267B4009275E2 /* Build configuration list for PBXNativeTarget "Nhat_tetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A3ACA21A4267B4009275E2 /* Debug */,
+				84A3ACA31A4267B4009275E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A3ACA41A4267B4009275E2 /* Build configuration list for PBXNativeTarget "Nhat_tetrisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A3ACA51A4267B4009275E2 /* Debug */,
+				84A3ACA61A4267B4009275E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84A3AC761A4267B3009275E2 /* Project object */;
+}
