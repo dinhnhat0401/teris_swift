@@ -9,7 +9,7 @@
 import UIKit
 import SpriteKit
 
-class GameViewController: UIViewController, SwiftTrisDelegate {
+class GameViewController: UIViewController, SwiftTrisDelegate, UIGestureRecognizerDelegate {
     
     var scene: GameScene!
     var swiftris:SwiftTris!
@@ -44,31 +44,31 @@ class GameViewController: UIViewController, SwiftTrisDelegate {
     
     // #3
     func didTick() {
-//        swiftris.letShapeFall()
-        swiftris.fallingShape?.lowerShapeByOneRow()
-        scene.redrawShape(swiftris.fallingShape!, completion: {})
+        swiftris.letShapeFall()
+//        swiftris.fallingShape?.lowerShapeByOneRow()
+//        scene.redrawShape(swiftris.fallingShape!, completion: {})
     }
     
-//    @IBAction func didTap(sender: UITapGestureRecognizer) {
-//        swiftris.rotateShape()
-//    }
-//    
-//    @IBAction func didPan(sender: UIPanGestureRecognizer) {
-//        let currentPoint = sender.translationInView(self.view)
-//        if let originalPoint = panPointReference {
-//            if abs(currentPoint.x - originalPoint.x) > (BlockSize * 0.9) {
-//                if sender.velocityInView(self.view).x > CGFloat(0) {
-//                    swiftris.moveShapeRight()
-//                    panPointReference = currentPoint
-//                } else {
-//                    swiftris.moveShapeLeft()
-//                    panPointReference = currentPoint
-//                }
-//            } else if sender.state == .Began {
-//                panPointReference = currentPoint
-//            }
-//        }
-//    }
+    @IBAction func didTap(sender: UITapGestureRecognizer) {
+        swiftris.rotateShape()
+    }
+    
+    @IBAction func didPan(sender: UIPanGestureRecognizer) {
+        let currentPoint = sender.translationInView(self.view)
+        if let originalPoint = panPointReference {
+            if abs(currentPoint.x - originalPoint.x) > (BlockSize * 0.9) {
+                if sender.velocityInView(self.view).x > CGFloat(0) {
+                    swiftris.moveShapeRight()
+                    panPointReference = currentPoint
+                } else {
+                    swiftris.moveShapeLeft()
+                    panPointReference = currentPoint
+                }
+            } else if sender.state == .Began {
+                panPointReference = currentPoint
+            }
+        }
+    }
     
     func nextShape() {
         let newShapes = swiftris.newShape()

@@ -17,9 +17,25 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="o8g-7d-wSw" appends="YES" id="deG-S8-AcO"/>
+                            <outletCollection property="gestureRecognizers" destination="EkI-JP-aLq" appends="YES" id="5mx-3W-MdY"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="o8g-7d-wSw">
+                    <connections>
+                        <action selector="didTap:" destination="LVB-YS-i5n" id="6Ct-NM-Jo9"/>
+                        <outlet property="delegate" destination="LVB-YS-i5n" id="C0f-Eu-Lxf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="EkI-JP-aLq">
+                    <connections>
+                        <action selector="didPan:" destination="LVB-YS-i5n" id="ySd-Rr-ydi"/>
+                        <outlet property="delegate" destination="LVB-YS-i5n" id="k2A-cH-sp3"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="96" y="168"/>
         </scene>
