@@ -201,9 +201,9 @@ class SwiftTris {
     
     func moveShapeRight() {
         if let shape = fallingShape {
-            shape.shiftLeftByOneColumn()
+            shape.shiftRightByOneColumn()
             if detectIllegalPlacement() {
-                shape.shiftRightByOneColumn()
+                shape.shiftLeftByOneColumn()
                 return
             }
             delegate?.gameShapeDidMove(self)

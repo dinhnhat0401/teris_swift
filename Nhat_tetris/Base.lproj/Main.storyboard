@@ -15,13 +15,70 @@
                     <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxH-r1-x7t">
+                                <rect key="frame" x="502" y="316" width="84" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRe-cM-zrC">
+                                        <rect key="frame" x="0.0" y="60" width="84" height="31"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                        <color key="textColor" red="0.5450980392" green="0.4549019608" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LEVEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xns-LO-FnE">
+                                        <rect key="frame" x="0.0" y="8" width="84" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.54509803921568623" green="0.45490196078431372" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="dQp-eq-P80"/>
+                                    <constraint firstAttribute="width" constant="84" id="zEe-H8-1qC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyA-GL-Ap0">
+                                <rect key="frame" x="501" y="177" width="84" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUo-7N-NeV">
+                                        <rect key="frame" x="0.0" y="9" width="84" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.13333333333333333" green="0.6470588235294118" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JI-JA-AvD">
+                                        <rect key="frame" x="0.0" y="60" width="84" height="31"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                        <color key="textColor" red="0.1333333333" green="0.64705882349999999" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="aBU-RL-fLK"/>
+                                    <constraint firstAttribute="width" constant="84" id="kEa-Bz-F3e"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fxH-r1-x7t" secondAttribute="trailing" constant="14" id="HqH-Iv-Qxx"/>
+                            <constraint firstItem="fxH-r1-x7t" firstAttribute="top" secondItem="gyA-GL-Ap0" secondAttribute="bottom" constant="39" id="Vbr-qK-XqP"/>
+                            <constraint firstAttribute="trailing" secondItem="gyA-GL-Ap0" secondAttribute="trailing" constant="15" id="n9K-CF-ozL"/>
+                            <constraint firstItem="gyA-GL-Ap0" firstAttribute="top" secondItem="PCf-gQ-wO7" secondAttribute="bottom" constant="157" id="sAB-MZ-L0K"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="o8g-7d-wSw" appends="YES" id="deG-S8-AcO"/>
                             <outletCollection property="gestureRecognizers" destination="EkI-JP-aLq" appends="YES" id="5mx-3W-MdY"/>
+                            <outletCollection property="gestureRecognizers" destination="ifx-PH-xgk" appends="YES" id="6n1-iA-G70"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="levelLabel" destination="tRe-cM-zrC" id="Ykw-N2-bay"/>
+                        <outlet property="scoreLabel" destination="8JI-JA-AvD" id="Cac-i1-QaL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="o8g-7d-wSw">
@@ -36,6 +93,12 @@
                         <outlet property="delegate" destination="LVB-YS-i5n" id="k2A-cH-sp3"/>
                     </connections>
                 </panGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="ifx-PH-xgk">
+                    <connections>
+                        <action selector="didSwipe:" destination="LVB-YS-i5n" id="Wzf-nZ-rIQ"/>
+                        <outlet property="delegate" destination="LVB-YS-i5n" id="vhp-pM-EKj"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="96" y="168"/>
         </scene>
